@@ -1,0 +1,37 @@
+Media Production Website - Issues Identified
+
+1. Semantic HTML Issues:
+- Generic <div> tags used for header, navigation, main content, and footer.
+- Missing <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer> elements.
+- No <figure> or <figcaption> used for images; only basic <img> tags are present.
+
+2. Metadata Omissions:
+- Missing <meta charset="UTF-8"> for character encoding.
+- Missing <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsiveness.
+- No <meta name="description" content="..."> for SEO and accessibility.
+
+3. Media Element Deficiencies:
+- Video element missing 'controls' attribute and fallback content.
+- A second video element is required but missing.
+- No <audio> element is present.
+- No <iframe> element for embedded content (like maps) is present.
+
+4. Form Errors and Missing Features:
+- <label> elements are missing for all form inputs.
+- Input types are incorrectly set to "text" for email and phone rather than "email" and "tel".
+- Missing advanced input types: <select>, radio buttons, and checkboxes.
+- Lacks fieldsets for grouping related form fields.
+- No HTML5 validation attributes (required, pattern, etc.).
+
+5. CSS Layout and Styling Issues:
+- Navigation bar uses basic inline layout instead of Flexbox.
+- No CSS Grid used for the media gallery or any other section.
+- Only 2-3 basic selector types used (element, class); needs 5+.
+- No pseudo-classes (e.g., :hover, :focus, :nth-child) are used.
+- Missing advanced effects: text-shadow, CSS transforms, transitions, and keyframe animations.
+- Poor color contrast in the hero section.
+
+6. Code Quality Concerns:
+- Inconsistent indentation and formatting.
+- CSS is not grouped or organized logically.
+- Potential cross-browser compatibility issues due to missing resets or vendor prefixes.

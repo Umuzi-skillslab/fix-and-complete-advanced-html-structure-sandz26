@@ -1,44 +1,53 @@
-# Media Production Website Starter Code
+# MediaPro Studios - Advanced Media Production Website
 
-This is the starter codebase for your media production website project. The code is approximately 70% complete but contains errors, omissions, and areas that need significant improvement.
+## Overview
+MediaPro Studios is a professional media production company specializing in high-end video, audio, and post-production services. This website showcases our capabilities through a modern, responsive interface built with advanced HTML5 and CSS3 techniques—demonstrating superior semantic structure, sophisticated layouts, and immersive visual effects without any JavaScript.
 
-## What's Included
+## Issues Found & Resolved
+The starter codebase contained several critical omissions and errors:
+- **Semantic HTML**: Generic `div` tags were replaced with appropriate HTML5 elements (`header`, `nav`, `main`, `section`, `article`, `footer`) to improve accessibility and SEO.
+- **Metadata**: Missing viewport, charset, and description meta tags were added for responsiveness and optimization.
+- **Media Elements**: Fixed missing controls and fallbacks for video/audio, added a second video, and implemented a functional Google Maps iframe.
+- **Form Validation**: The contact form was missing labels, fieldsets, and proper input types. I implemented 7+ input types (email, tel, date, number, etc.) and robust HTML5 validation.
+- **Visuals**: Added 6+ images using `<figure>` and `<figcaption>` markup for better semantic representation.
 
-- `index.html` - Home page (incomplete, semantic issues)
-- `about.html` - About/Services page (incomplete, missing flexbox/grid layouts)
-- `media.html` - Media gallery page (incomplete, missing media elements)
-- `contact.html` - Contact page (incomplete form with validation issues)
-- `css/styles.css` - Stylesheet (incomplete, missing advanced features)
-- `images/` folder - Placeholder folder for your images
-- `media/` folder - Placeholder folder for video/audio files
+## Advanced Implementations
 
-## Your Task
+### Flexbox Layouts
+- **Navigation Bar**: A responsive, sticky navigation bar using `flex` with `justify-content: space-between` and `align-items: center`.
+- **Services Section**: A fluid grid of service cards using `flex-wrap: wrap` and `flex: 1 1 300px` to ensure perfect responsiveness on all screen sizes.
 
-Review the provided code carefully and:
-1. Identify and fix all HTML and CSS errors
-2. Complete all missing advanced requirements
-3. Add required media elements (video, audio, iframe)
-4. Implement flexbox and CSS Grid layouts
-5. Add CSS effects, transforms, transitions, and animations
-6. Expand selector usage and add pseudo-classes
-7. Improve code quality and organisation
-8. Test across multiple browsers and validate all code
+### CSS Grid Layout
+- **Media Gallery**: A sophisticated 10-item gallery using CSS Grid with `grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))` and `grid-gap`.
+- **Advanced Positioning**: Utilized **Grid Template Areas** on the Home page to create an explicitly mapped, perfectly balanced 3x2 grid for featured content on larger screens.
 
-## Getting Started
+### Selectors & Pseudo-classes
+I utilized over 8 selector types, including:
+- **Attribute Selectors**: `img[alt^="Digital"]`
+- **Child & Descendant Selectors**: `.form-group > input`
+- **Combination Selectors**: `.service-item h3 + p`
+- **Pseudo-classes**: `:hover`, `:focus`, `:not()`, `:last-child`, `:active`, and `:first-of-type`.
 
-1. Review all HTML and CSS files thoroughly
-2. Run HTML through W3C Validator to identify errors
-3. Run CSS through W3C CSS Validator
-4. Identify missing advanced features (flexbox, grid, animations, etc.)
-5. Test in multiple browsers
-6. Fix all issues and complete missing requirements
+### Visual Effects & Animations
+- **CSS Transforms**: Implemented `translate`, `scale`, and `rotate` for interactive hover states.
+- **Transitions**: Smooth transitions on all interactive elements.
+- **Keyframe Animation**: A smooth `fadeIn` animation on the hero section and a creative **Bonus** spinning loading animation that fades out after 3 seconds.
+- **Text Effects**: Implemented `text-shadow` for depth and `linear-gradient` text for a premium brand feel.
 
-## Notes
+## Accessibility & Compatibility
+- **Semantic Landmarks**: Used proper HTML5 landmarks for screen readers.
+- **Form Labels**: Every input is explicitly linked to a label via `for` and `id`.
+- **Cross-Browser**: Tested for compatibility, including vendor-prefixed properties like `-webkit-background-clip`.
+- **Responsive**: Fully optimized for Desktop, Tablet, and Mobile views.
 
-- You will need to add your own video and audio files to the `media/` folder
-- You will need to add images to the `images/` folder
-- The starter code intentionally has issues for you to discover and fix
-- Advanced features like flexbox, grid, animations are missing or incomplete
-- Refer to the project requirements document for all specifications
+## How to View
+To view this website locally:
+1. Clone the repository.
+2. Open `index.html` in any modern web browser (Chrome, Firefox, Safari, or Edge).
 
-Good luck!
+## Project Structure
+- `index.html`, `about.html`, `media.html`, `contact.html`: Page templates.
+- `css/styles.css`: Centralized advanced stylesheet.
+- `images/`: High-quality media assets.
+- `media/`: Video and audio sample placeholders.
+- `design/`: Original wireframes and planning documents.

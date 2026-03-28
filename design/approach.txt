@@ -1,0 +1,7 @@
+Issues Identification Document - Approach
+
+My approach to implementing the advanced requirements involves a systematic overhaul of the structure and styling. First, I will replace non-semantic <div> elements with HTML5 semantic tags to improve accessibility and SEO. I will then enhance the media page by adding the missing audio, video, and iframe components, ensuring they have appropriate controls and fallbacks.
+
+The contact form will be rebuilt to include accessible labels, specific HTML5 input types, and robust validation rules. For the layout, I will implement Flexbox for the navigation and services section to ensure a fluid, responsive structure. CSS Grid will be utilized for the media gallery to demonstrate advanced grid positioning and responsiveness using auto-fit and minmax functions.
+
+Finally, I will add visual polish through CSS transforms, transitions, and a multi-step keyframe animation, while ensuring all code passes W3C validation and maintains high organizational standards.
