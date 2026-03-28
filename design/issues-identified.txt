@@ -30,8 +30,18 @@ Media Production Website - Issues Identified
 - No pseudo-classes (e.g., :hover, :focus, :nth-child) are used.
 - Missing advanced effects: text-shadow, CSS transforms, transitions, and keyframe animations.
 - Poor color contrast in the hero section.
+- Absolute font sizes used instead of relative (rem/em) units.
+- Missing hover states for interactive elements (links, buttons).
+- Default focus outlines not styled for accessibility.
+- Navigation disappears on scroll (needs sticky positioning).
+- No clear hierarchy between heading levels (h1-h6).
+- Form inputs lack placeholder text for better UX.
+- Form submit button lacks visual feedback on active/hover states.
+- Image aspect ratios distorted due to lack of object-fit property.
+- Text blocks lack line-height for readability.
 
 6. Code Quality Concerns:
 - Inconsistent indentation and formatting.
 - CSS is not grouped or organized logically.
 - Potential cross-browser compatibility issues due to missing resets or vendor prefixes.
+
