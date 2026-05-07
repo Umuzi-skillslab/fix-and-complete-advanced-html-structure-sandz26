@@ -6,6 +6,7 @@ This is the starter codebase for your media production website project. The code
 
 ## What's Included
 
+
 - `index.html` - Home page (incomplete, semantic issues)
 - `about.html` - About/Services page (incomplete, missing flexbox/grid layouts)
 - `media.html` - Media gallery page (incomplete, missing media elements)
