@@ -1,50 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Media Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore our media gallery featuring professional video productions, audio samples, and behind-the-scenes glimpses of our studio.">
+    <meta name="author" content="MediaPro Studios">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="media.html">
+    <meta property="og:title" content="Production Portfolio - MediaPro Studios">
+    <meta property="og:description" content="Explore our diverse portfolio of high-impact visual stories.">
+    <meta property="og:image" content="images/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Production Portfolio - MediaPro Studios">
+
+    <title>Production Portfolio - MediaPro Studios</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="top">
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <header class="top">
         <h1>Media Gallery</h1>
-        <div class="nav">
+        <nav class="nav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="media.html">Media</a>
             <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="media-intro section-header">
+            <h2>Our Creative Showcase</h2>
+            <p>Experience the quality, technical precision, and storytelling excellence we bring to every production.
+            </p>
+        </section>
+
+        <section class="video-showcase">
+            <h2>Video Showcase</h2>
+            <div class="video-container">
+                <figure>
+                    <video controls width="100%" poster="images/video-poster1.jpg">
+                        <source src="media/sample-video-1.mp4" type="video/mp4">
+                        Your browser does not support the video tag. Here is a <a href="media/sample-video-1.mp4">link
+                            to the video</a> instead.
+                    </video>
+                    <figcaption>Commercial Reel 2026 - A compilation of our best corporate work.</figcaption>
+                </figure>
+                <figure>
+                    <video controls width="100%" poster="images/video-poster2.jpg">
+                        <source src="media/sample-video-2.mp4" type="video/mp4">
+                        Your browser does not support the video tag. Here is a <a href="media/sample-video-2.mp4">link
+                            to the video</a> instead.
+                    </video>
+                    <figcaption>Documentary Short - "Behind the Scenes" of our latest production.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="audio-samples">
+            <h2>Audio Samples</h2>
+            <div class="audio-container">
+                <figure>
+                    <audio controls>
+                        <source src="media/audio-sample-1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element. Here is a <a
+                            href="media/audio-sample-1.mp3">link to the audio</a> instead.
+                    </audio>
+                    <figcaption>Studio Mix Sample - Professional music production quality.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="section-header">
+                <h2>Production Portfolio</h2>
+                <p>Explore our full range of visual stories and professional productions.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="images/work1.jpg" alt="Cinematographer at work">
+                    <figcaption>On Location - Commercial Shoot</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work2.jpg" alt="Audio mixing console">
+                    <figcaption>Mastering Suite - final audio polish</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work3.jpg" alt="Video editing station">
+                    <figcaption>Post-Production - Color grading</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work4.jpg" alt="Studio lighting setup">
+                    <figcaption>Lighting Setup - Studio B</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work5.jpg" alt="Digital cinema camera">
+                    <figcaption>8K Cinema Camera - High-end equipment</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work6.jpg" alt="Recording booth">
+                    <figcaption>Vocal Booth - Soundproof recording</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work7.jpg" alt="Film set clapboard">
+                    <figcaption>Documentary Production - Day 14</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work8.jpg" alt="Lenses and filters">
+                    <figcaption>Prime Lens Kit - Precision optics</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work9.jpg" alt="Drone cinematography">
+                    <figcaption>Aerial Cinematography - Drone view</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/work10.jpg" alt="Live event production">
+                    <figcaption>Live Event - Multi-cam setup</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bottom">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About MediaPro</h4>
+                <p>We are a full-service media production company specializing in video, audio, and post-production
+                    services.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Info</h4>
+                <p>123 Studio Lane, Los Angeles, CA 90028</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@mediaprostudios.com</p>
+            </div>
         </div>
-    </div>
-    
-    <div>
-        <h2>Video Showcase</h2>
-        
-        <!-- First video - missing controls and fallback -->
-        <video src="media/sample1.mp4" width="640" height="360"></video>
-        
-        <!-- Second video missing entirely -->
-    </div>
-    
-    <div>
-        <h2>Audio Sample</h2>
-        <!-- Audio element missing completely -->
-        <p>Listen to our audio production quality.</p>
-    </div>
-    
-    <div>
-        <h2>Location</h2>
-        <!-- iframe missing completely -->
-        <p>Visit our studio at 123 Media Street</p>
-    </div>
-    
-    <div>
-        <h2>Client Testimonials</h2>
-        <img src="images/client1.jpg">
-        <img src="images/client2.jpg">
-        <!-- Missing figure/figcaption semantic markup -->
-    </div>
-    
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MediaPro Studios. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

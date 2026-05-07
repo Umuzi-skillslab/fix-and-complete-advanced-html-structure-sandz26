@@ -1,40 +1,170 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with MediaPro Studios for your next production project. We offer professional video, audio, and post-production consulting.">
+    <meta name="author" content="MediaPro Studios">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="contact.html">
+    <meta property="og:title" content="Contact Us - MediaPro Studios">
+    <meta property="og:description"
+        content="Ready to start your production? Contact the experts at MediaPro Studios today.">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Us - MediaPro Studios">
+
+    <title>Contact Us - MediaPro Studios</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="top">
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <header class="top">
         <h1>Contact Us</h1>
-        <div class="nav">
+        <nav class="nav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="media.html">Media</a>
             <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <div class="contact-form-section">
+                <h2>Get In Touch</h2>
+                <p>Send us a message about your upcoming project.</p>
+
+                <form action="#" method="POST" class="advanced-form">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="name" placeholder="Muzi Zwane" required
+                                minlength="2">
+                            <span class="field-hint">Please enter at least 2 characters.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-address">Email Address</label>
+                            <input type="email" id="email-address" name="email" placeholder="zmuzi@example.com"
+                                required>
+                            <span class="field-hint">Please enter a valid email address (e.g., name@example.com).</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone" placeholder="011-579-3000"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <span class="field-hint">Format required: 123-456-7890</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Project Details</legend>
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="type" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="video">Video Production</option>
+                                <option value="audio">Audio Engineering</option>
+                                <option value="post">Post-Production</option>
+                                <option value="full">Full Multimedia Package</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Budget Range</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="budget" value="low"> R500 - R2,000</label>
+                                <label><input type="radio" name="budget" value="medium" checked> R2,000 - R5,000</label>
+                                <label><input type="radio" name="budget" value="high"> R5,000+</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-date">Target Start Date</label>
+                            <input type="date" id="project-date" name="start-date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="team-size">Expected Team Size</label>
+                            <input type="number" id="team-size" name="team-size" min="1" max="50" value="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-content">Project Description</label>
+                            <textarea id="message-content" name="message" placeholder="Tell us about your vision..."
+                                required maxlength="500"></textarea>
+                            <span class="field-hint">Message should be at least 10 characters long.</span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label><input type="checkbox" name="terms" required> I agree to the privacy policy and terms
+                                of service</label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn-submit">Send Message &rarr;</button>
+                </form>
+            </div>
+
+            <aside class="contact-info-section">
+                <h2>Our Location</h2>
+                <div class="info-card">
+                    <h4>Studio Address</h4>
+                    <p>123 Studio Lane<br>Los Angeles, CA 90028</p>
+                </div>
+                <div class="info-card">
+                    <h4>Contact Channels</h4>
+                    <p>Email: info@mediaprostudios.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.73919830500!2d-118.3301037!3d34.093551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf087e594d75%3A0x8673322aa046f53e!2s123%20Studio%20Ln%2C%20Los%20Angeles%2C%20CA%2090028!5e0!3m2!1sen!2sus!4v1711612000000!5m2!1sen!2sus"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="bottom">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About MediaPro</h4>
+                <p>We are a full-service media production company specializing in video, audio, and post-production
+                    services.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Info</h4>
+                <p>123 Studio Lane, Los Angeles, CA 90028</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@mediaprostudios.com</p>
+            </div>
         </div>
-    </div>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <!-- Form with multiple errors -->
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, proper input types (email, tel), validation attributes -->
-            <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
-            <!-- Missing: fieldset for grouping -->
-            
-            <button>Submit</button>
-        </form>
-    </div>
-    
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MediaPro Studios. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
