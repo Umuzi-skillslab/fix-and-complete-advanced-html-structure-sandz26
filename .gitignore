@@ -1,0 +1,9 @@
+# Windows metadata files
+*Zone.Identifier
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: logs
+*.log
